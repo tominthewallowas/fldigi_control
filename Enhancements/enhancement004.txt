@@ -1,0 +1,8 @@
+4/3/2021
+Enhancement004
+Create a report based on the UTC Time and Day converted to local time and observant of DST.
+
+
+Future enhancements:
+
+I would also like to have a way to correct for Daylight Savings Time depending on the each program. That is some programs observe a change to DST from to ST and some don't.

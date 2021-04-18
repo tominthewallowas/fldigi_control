@@ -1,0 +1,19 @@
+3/24/2021
+Enhancement002
+
+Modify fldigi_control.py to incorporate use of day of the week and utc time from database to
+control radio. This will alleviate the need for the many crontab entries related to each
+radio schedule and the clumsy program names used by the crontab.
+
+I anticipate a cron job that will run periodically, perhaps every minute or at the 29th
+and 59th minute of each hour and launch fldigi_control.py.
+
+fldigi_control.py will then collect the utc time and extract the day of the week and the
+time (hour and minute) and then select from the sqlite3 database table programs based
+on those parameters.
+
+If row is returned then fldigi_control will start the pyfldigi processes to set up the
+radio appropriately.
+
+Note that only one set of data from the one row will be used. So if there are two rows with
+the same criteria, one of the rows will be discarded. 

@@ -1,0 +1,36 @@
+Enhancement001
+Request Date: 3/10/2021
+Requester: Tom
+Branch/Created: enhance001 3/10/2021
+
+Overview:
+
+In order to make the entry of program information less error prone
+this enhancement will add one to many tables for static information
+that can be choosen from foreign key tables.
+
+Enhancements:
+
+Database
+- Create new tables for data integrity
+- Re create programs table to accept foreign keys
+- Build test data scripts to add enhanced data
+
+Programs
+
+fldigi_control_mxe.py
+
+- Modify codes (sql and python) to use the ehanced tables
+- Provide means of selecting foreign key data when adding new rows
+  to programs table
+- Add data driven code to determine column names on the fly
+  for the data grid (Note: Experimental script exists for this)
+
+Note: This enhancement does not provide maintaining the foreign key
+tables. That will be added as another enhancement at a later date.
+
+Reasearch:
+
+- How to use a combo dropdown widget within a table widget field.
+    - Is it even possible?
+    - How to do it?

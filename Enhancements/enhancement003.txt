@@ -1,0 +1,58 @@
+4/1/2021
+Enhancement003
+
+After incorporating UTC Day and Time into fldigi_control it's now time to integrate that into fldigi_control_maintenance.
+
+Add a combo box that is preloaded from a list that includes Day of Week as "Sun, Mon, etc."
+
+Add a time field for entering the Utc Time.
+
+Future enhancements:
+
+I would also like to have a way to correct for Daylight Savings Time depending on the each program. That is some programs observe a change to DST from to ST and some don't.
+
+I would also like to create a report based on the UTC Time and Day converted to local time and observant of DST.
+
+New schema used by fldigi_control:
+CREATE TABLE programs_new(
+  Id INT,
+  Program TEXT,
+  Station TEXT,
+  StationFrequency TEXT,
+  Modulation TEXT,
+  Bandwidth TEXT,
+  Modem TEXT,
+  CenterFrequency TEXT,
+  Active TEXT,
+  Notes TEXT,
+  Day text, <-- Add to gui
+  UtcTime text <-- Add to gui
+); 
+
+Schema used by fldigi_control_maintenance:
+CREATE TABLE programs (
+        Id integer primary key,
+        Program Text default "",
+        Station Text default "",
+        StationFrequency Text default "",
+        Modulation Text default "",
+        Bandwidth Text default "",
+        Modem Text default "",
+        CenterFrequency Text default "",
+        Active Text default "Y",
+        Notes Text default ""
+ );
+
+CREATE TABLE IF NOT EXISTS "programs"(
+  Id INTEGER primary key autoincrement,
+  Program TEXT,
+  Station TEXT,
+  StationFrequency TEXT,
+  Modulation TEXT,
+  Bandwidth TEXT,
+  Modem TEXT,
+  CenterFrequency TEXT,
+  Active TEXT,
+  Notes TEXT,
+  Day text,
+  UtcTime text);
