@@ -1,0 +1,17 @@
+Program
+A program has one radio station while a radio station may be used by many programs 1 to M
+
+A program has one radio frequency while a radio frequency may be used by more than one program (unlikely) 1 to M
+
+A program has one date and time
+
+A program has one modulation mode while a modulation mode may be used by more than one program 1 to M
+
+A program has one initial modem while a modem may be used by more than one program
+
+A program has one center data frequency while a center data frequency may be used by more than one program 1 to M
+
+Station
+A station my operate on 1 to many frequencies
+
+A station has from one to many programs

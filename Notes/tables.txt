@@ -1,0 +1,32 @@
+Tables
+
+programs
+id primary key
+program text
+radio_station foreign key into radio_stations
+radio_frequency foreign key into radio_frequencies
+mode foreign key into modes
+modem foreign key into modems
+center_data_frequency foreign key into center_data_frequencies
+active
+notes
+
+radio_stations
+id primary key
+station name unique
+
+radio_frequencies
+id primary key
+frequency unique
+
+modes
+id primary key
+mode unique
+
+modems
+id primary key
+modem unique
+
+center_data_frequencies
+id primary key
+frequency unique

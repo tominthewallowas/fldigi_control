@@ -1,0 +1,18 @@
+Sun 0
+Mon 1
+Tue 2
+Wed 3
+Thu 4
+Fri 5
+Sat 6
+
+25 15 * * 0 /home/pi/bin/fldigi_control.py SWRG_SUN_2330_WRMI >> /home/pi/bin/fldigi_control.log 2>&1
+25 16 * * 4 /home/pi/bin/fldigi_control.py SWRG_FRI_0030_WINB >> /home/pi/bin/fldigi_control.log 2>&1
+55 04 * * 5 /home/pi/bin/fldigi_control.py SWRG_FRI_1300_WRMI >> /home/pi/bin/fldigi_control.log 2>&1
+55 06 * * 5 /home/pi/bin/fldigi_control.py SWRG_FRI_1500_WINB >> /home/pi/bin/fldigi_control.log 2>&1
+25 19 * * 5 /home/pi/bin/fldigi_control.py SWRG_SAT_0330_WINB >> /home/pi/bin/fldigi_control.log 2>&1
+25 05 * * 6 /home/pi/bin/fldigi_control.py SWRG_SAT_1330_WRMI >> /home/pi/bin/fldigi_control.log 2>&1
+55 23 * * 6 /home/pi/bin/fldigi_control.py SWRG_SUN_0800_WRMI >> /home/pi/bin/fldigi_control.log 2>&1
+55 12 * * 3 /home/pi/bin/fldigi_control.py TIAMS_WED_2100_WRMI >> /home/pi/bin/fldigi_control.log 2>&1
+55 17 * * 3 /home/pi/bin/fldigi_control.py TIAMS_THU_0200_WRMI >> /home/pi/bin/fldigi_control.log 2>&1
+55 15 * * 6 /home/pi/bin/fldigi_control.py KBC_SUN_0000_KBC >> /home/pi/bin/fldigi_control.log 2>&1

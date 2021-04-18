@@ -1,0 +1,20 @@
+        self.frmFieldProgram = QLineEdit(self.centralwidget)
+        self.frmLayout.addRow("Program:", self.frmFieldProgram)
+
+        self.frmComboStation = QComboBox(self.centralwidget)
+        self.frmComboFreq = QComboBox(self.centralwidget)
+        self.frmComboMode = QComboBox(self.centralwidget)
+        self.frmComboModem = QComboBox(self.centralwidget)
+        self.frmComboCenterFreq = QComboBox(self.centralwidget)
+        self.frmComboBandwidth = QComboBox(self.centralwidget)
+
+        self.frmCheckBoxActive = QCheckBox(self.centralwidget)
+        self.frmCheckBoxActive.setChecked(True)
+
+        self.frmTextEditNotes = QTextEdit(self.centralwidget)
+
+
+self.frmComboStation, self.frmComboFreq, self.frmComboMode, self.frmComboModem,  self.frmComboCenterFreq, self.frmComboBandwidth
+
+insert fields order
+Id, Program, Frequency, ReceiveMode, Bandwidth, Modem, CenterFrequency, Active, Notes
