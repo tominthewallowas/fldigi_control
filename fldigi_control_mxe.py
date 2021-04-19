@@ -7,6 +7,7 @@
     The program utilizes the PyQt5 widget library instead of PySide2 so it will work on a Raspberry Pi 4.
     Author: Tom Bingham
     Email: <my first name> at wb7eux period radio
+
     Date: 2/22/2021
 """
 
